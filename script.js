@@ -1,3 +1,4 @@
+
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -235,7 +236,5 @@ quitButton.addEventListener("click", () => {
     resumeButton.style.display = "none";
     scoreBoard.style.display = 'none'; // 👈 HIDE scoreboard when quit
 });
-export function checkCollision(snake, food) {
-    return snake[0].x === food.x && snake[0].y === food.y;
-  }
+
   
